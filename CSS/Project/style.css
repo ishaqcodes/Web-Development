@@ -1,28 +1,144 @@
 * {
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 
 body {
     background-color: #000;
-    font-size: 62.5%;
-}
-
-#header #navbar #logo img {
-    height: 40px;
-    width: 40px;
-}
-
-#header #navbar #home {
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #212121;
     color: #fff;
+}
+.main{
+    display: flex;
+    height: 100vh;
+}
+.sidebar{
+    width: 340px;
+    border-radius: 1rem;
+    background-color: #000;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+}
+.music-player{
+    position: fixed;
+    bottom: 0;
+    height: 72px;
+    width: 100%;
+    background-color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav{
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    border-radius: 1rem;
+    padding: 0.5rem 0.8rem;
+    margin: 0.4rem;
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+}
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin: 0.4rem;
+}
+.library-option {
+    padding: 0.5rem 0.8rem;
+    line-height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0.7;
+    transition: all 0.2s ease-in;
+}
+
+.library-option:hover{
+    opacity: 1;
+}
+.library-option i{
+    font-size: 1.25rem;
+}
+
+.library-option img{
+    height: 1.3rem;
+}
+.library-option a{
+    font-size: 1rem;
+}
+
+
+.boxes .box{
+    height: 120px;
+    background-color: #1d1d1d;
+    margin: 0.6rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0.5rem 0.8rem;
+}
+
+.box button{
+    width: 8rem;
+    height: 28px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.player{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;    
+}
+
+.music-player-icons{
+    display: flex;
+    height: 1.8rem;
+}
+
+.music-player-icons img{
+    height: 1.3rem;
+}
+
+.progress-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.line{
+    width: 100px;
+    height: 5px;
+    background-color: #fff;
 }
