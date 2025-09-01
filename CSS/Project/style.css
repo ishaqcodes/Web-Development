@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    font-size: 62.5%;
+}
+
+#header #navbar #logo img {
+    height: 40px;
+    width: 40px;
+}
+
+#header #navbar #home {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #212121;
+    color: #fff;
+}

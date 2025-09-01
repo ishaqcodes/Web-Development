@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .card {
+        width: 180px;
+        height: 250px;
+        text-align: center;
+        display: inline-block;
+        margin: 20px;
+        box-shadow: 1.5px 1.5px 3px grey, -1.5px 0 3px grey;
+      }
+      .card:hover {
+        transition: 0.8s;
+        box-shadow: 4px 4px 5px grey, -4px 0 5px grey;
+      }
+      .boy {
+        background: url("./boy.avif");
+        height: 50%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+      }
+      .girl {
+        background: url("./girl.jpg");
+        height: 50%;
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="boy"></div>
+      <div class="data">
+        <h2>Rahul Kumar</h2>
+        <p>Data Analyst</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="girl"></div>
+      <div class="data">
+        <h2>Neha Sharma</h2>
+        <p>Software Engineer</p>
+      </div>
+    </div>
+  </body>
+</html>
