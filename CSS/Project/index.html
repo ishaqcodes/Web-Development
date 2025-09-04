@@ -1,63 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Startify - Web Player: Music for everyone</title>
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="main">
-      <div class="sidebar">
-        <div class="nav">
-          <div class="nav-option" style="opacity: 1;">
-            <i class="fa-solid fa-house"></i>
-            <a href="#">Home</a>
-          </div>
-          <div class="nav-option">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <a href="#">Search</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spotify - Web Player</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+  <script src="https://kit.fontawesome.com/57323a2e66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="sidebar">
+      <div class="nav">
+        <div class="nav-option" style="opacity: 1">
+          <i class="fa-solid fa-house"></i>
+          <a href="#">Home</a>
         </div>
-        <div class="library">
-          <div class="library-option">
-            <img src="./assets/library_icon.png" alt="library icon">
-            <a href="#">Your Library</a>
-            <i class="fa-solid fa-plus"></i>
-            <i class="fa-solid fa-arrow-right"></i>
-          </div>
-          <div class="boxes">
-            <div class="box">
-              <h4>Create your first playlist</h4>
-              <p>It's easy, we'll help you</p>
-              <button class="boxBtn">Create Playlist</button>
-            </div>
-            <div class="box">
-              <h4>Create your first playlist</h4>
-              <p>It's easy, we'll help you</p>
-              <button class="boxBtn">Browse podcast</button>
-            </div>
-          </div>
+        <div class="nav-option">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <a href="#">Search</a>
         </div>
       </div>
-      <div class="main-content">main content</div>
-      <div class="music-player">
-        <div class="player">
-          <div class="music-player-icons">
-          <img src="./assets/player_icon1.png" alt="player_icon1">
-          <img src="./assets/player_icon2.png" alt="player_icon2">
-          <img src="./assets/player_icon3.png" alt="player_icon3">
-          <img src="./assets/player_icon4.png" alt="player_icon4">
-          <img src="./assets/player_icon5.png" alt="player_icon5">
+      <div class="library">
+        <div class="library-option">
+          <img src="./assets/library_icon.png" alt="library icon" />
+          <a href="#">Your Library</a>
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-arrow-right"></i>
         </div>
-        <div class="progress-bar">
-          <div class="line"></div>
-        </div>
+        <div class="boxes">
+          <div class="box">
+            <h4>Create your first playlist</h4>
+            <p>It's easy, we'll help you</p>
+            <button class="boxBtn">Create Playlist</button>
+          </div>
+          <div class="box">
+            <h4>Browse Podcasts</h4>
+            <p>Find something to listen to</p>
+            <button class="boxBtn">Browse Podcast</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/57323a2e66.js" crossorigin="anonymous"></script>
-  </body>
+    <div class="main-content">
+      <div class="sticky-nav">
+        <div class="icons">
+          <img src="./assets/backward_icon.png" alt="backward icon" style="opacity: 0.7" />
+          <img src="./assets/forward_icon.png" alt="forward icon" />
+        </div>
+        <div class="buttons">
+          <button class="boxBtn">Explore Premium</button>
+          <button class="boxBtn"><i class="fa-regular fa-circle-down"></i> Install App</button>
+          <i class="fa-regular fa-user user-icon"></i>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="text-content">
+          <h1>Spotify Originals</h1>
+          <a href="#">Show all</a>
+        </div>
+
+        <div class="first-card-box card-container">
+          <div class="card">
+            <div class="card-img1"></div>
+            <img src="./assets/play_musicbar.png" alt="musicbar" class="musicbar">
+            <div class="data">
+              <h2>Top 50 Global</h2>
+              <p>Your daily update of the most played...</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-content">
+          <h1>Featured Songs</h1>
+          <a href="#">Show all</a>
+        </div>
+
+        <div class="second-card-box card-container">
+          <div class="card"><div class="card-img2"></div><div class="data"><h2>Peaceful Piano</h2><p>Gentle and calming...</p></div></div>
+          <div class="card"><div class="card-img3"></div><div class="data"><h2>Lo-Fi Beats</h2><p>Chillhop and more...</p></div></div>
+          <div class="card"><div class="card-img4"></div><div class="data"><h2>RapCaviar</h2><p>Biggest rap hits...</p></div></div>
+          <div class="card"><div class="card-img5"></div><div class="data"><h2>Today's Top Hits</h2><p>Hits from around the world...</p></div></div>
+          <div class="card"><div class="card-img6"></div><div class="data"><h2>Deep Focus</h2><p>Stay focused with ambient sounds...</p></div></div>
+          <div class="card"><div class="card-img7"></div><div class="data"><h2>Top EDM</h2><p>The latest EDM drops...</p></div></div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="music-player">
+      <div class="album"></div>
+      <div class="player">
+        <div class="player-controls">
+          <img src="./assets/player_icon1.png" class="player-control-item">
+          <img src="./assets/player_icon2.png" class="player-control-item">
+          <img src="./assets/player_icon3.png" class="player-control-item" style="opacity: 1; height: 1.8rem;">
+          <img src="./assets/player_icon4.png" class="player-control-item">
+          <img src="./assets/player_icon5.png" class="player-control-item">
+        </div>
+        <div class="playback-bar">
+          <span class="curr-time">00:00</span>
+          <input type="range" min="0" max="100" class="progress-bar" step="1">
+        </div>
+      </div>
+      <div class="controls"></div>
+    </div>
+  </div>
+</body>
 </html>
